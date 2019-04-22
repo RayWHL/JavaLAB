@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<SplitPane dividerPositions="0.260752688172043" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="374.0" prefWidth="546.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DocLoginController">
+   <items>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="116.0" prefWidth="544.0">
+         <children>
+            <Label layoutX="146.0" layoutY="25.0" text="— 医生工作台—">
+               <font>
+                  <Font name="Microsoft JhengHei UI" size="34.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="238.0" prefWidth="544.0">
+         <children>
+            <AnchorPane layoutY="1.0" prefHeight="240.0" prefWidth="540.0">
+               <children>
+                  <Button fx:id="loginButton" layoutX="144.0" layoutY="145.0" mnemonicParsing="false" onMouseClicked="#on_login_clicked" prefHeight="36.0" prefWidth="264.0" text="登入" />
+                  <TextField fx:id="usernameField" layoutX="144.0" layoutY="45.0" prefHeight="36.0" prefWidth="264.0" promptText="请输入用户名" />
+                  <PasswordField fx:id="passwordField" layoutX="144.0" layoutY="94.0" onAction="#onEnter" prefHeight="36.0" prefWidth="264.0" promptText="请输入密码" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </items>
+</SplitPane>

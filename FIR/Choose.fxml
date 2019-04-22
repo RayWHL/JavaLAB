@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="374.0" prefWidth="546.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" 
+fx:controller="application.ChooseController">
+   <children>
+      <AnchorPane prefHeight="374.0" prefWidth="539.0">
+         <children>
+            <Button fx:id="patientButton" layoutX="47.0" layoutY="208.0" mnemonicParsing="false" onMouseClicked="#on_patientButton_clicked" prefHeight="123.0" prefWidth="446.0" style="-fx-background-color: #4ABDAC;" text="我是患者" textFill="WHITE">
+               <font>
+                  <Font name="Microsoft JhengHei UI Bold" size="55.0" />
+               </font>
+               <effect>
+                  <Blend mode="RED" />
+               </effect>
+            </Button>
+            <Button fx:id="doctorButton" layoutX="47.0" layoutY="49.0" mnemonicParsing="false" onMouseClicked="#on_doctorButton_clicked" prefHeight="129.0" prefWidth="446.0" style="-fx-background-color: #4ABDAC;" text="我是医生" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Microsoft JhengHei UI Bold" size="55.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
