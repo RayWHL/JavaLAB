@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.*?>
+
+<AnchorPane prefHeight="270.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginController">
+   <children>
+      <Label layoutX="152.0" layoutY="27.0" text="Login" />
+      <Label layoutX="63.0" layoutY="64.0" text="登录类型" />
+      <Label layoutX="63.0" layoutY="103.0" text="编号" />
+      <Label layoutX="63.0" layoutY="145.0" text="密码" />
+      
+       <ChoiceBox fx:id="LoginType" layoutX="142.0" layoutY="60.0" prefHeight="23.0" prefWidth="137.0" value="病人"> 
+                      <items>
+        				<FXCollections fx:factory="observableArrayList">
+           				 <String fx:value="医生" />
+           				 <String fx:value="病人" />
+       					 </FXCollections>
+    				  </items>
+       </ChoiceBox>
+      		
+      <TextField fx:id="UserName" layoutX="142.0" layoutY="99.0" prefHeight="23.0" prefWidth="137.0" />
+      <PasswordField fx:id="PassWord" layoutX="142.0" layoutY="141.0" prefHeight="23.0" prefWidth="137.0" />
+      <Button fx:id="LoginButton" layoutX="149.0" layoutY="197.0" mnemonicParsing="false" onMouseClicked="#on_LoginButton_clicked" text="确定" />
+   </children>
+</AnchorPane>
